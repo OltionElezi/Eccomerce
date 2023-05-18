@@ -32,6 +32,7 @@ export default async function handle(req, res) {
   if (method === "PUT") {
     const { title, description, price, images, category, properties, _id } =
       req.body;
+    console.log({ images });
     await Product.updateOne(
       { _id },
       { title, description, price, images, category, properties }

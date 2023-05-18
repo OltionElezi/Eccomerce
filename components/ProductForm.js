@@ -68,6 +68,7 @@ export default function ProductForm({
     }
   }
   function updateImagesOrder(images) {
+    console.log(images);
     setImages(images);
   }
   function setProductProp(propName, value) {
@@ -141,7 +142,7 @@ export default function ProductForm({
                 key={link}
                 className="h-24 bg-white p-4 shadow-sm rounded-sm border border-gray-200"
               >
-                <image src={link} alt="" className="rounded-lg" />
+                <img src={link} alt="" className="rounded-lg" />
               </div>
             ))}
         </ReactSortable>
